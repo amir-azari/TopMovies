@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.movies.AllMovieFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/moviesLay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <TextView
+            android:id="@+id/top"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_10mdp"
+            android:text="@string/top_movies"
+            android:textColor="@color/crayola"
+            android:textSize="@dimen/_12font_mdp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+        <!--List-->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/moviesRecycler"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+
+            android:clipToPadding="false"
+            android:paddingTop="@dimen/_10mdp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/top" />
+        <!--Empty-->
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/emptyItemsLay"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone">
+
+            <include layout="@layout/empty_items" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ProgressBar
+        android:id="@+id/moviesLoading"
+        android:layout_width="@dimen/_20mdp"
+        android:layout_height="@dimen/_20mdp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/homeDisLay"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <include
+            android:id="@+id/statusLay"
+            layout="@layout/empty_items" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <!--    Top 250 movies-->
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.register.RegisterFragment">
+<!--Avatar-->
+    <ImageView
+        android:id="@+id/userAvatarImg"
+        android:layout_width="@dimen/_80mdp"
+        android:layout_height="@dimen/_80mdp"
+        android:layout_marginTop="@dimen/_50mdp"
+        android:src="@drawable/user_avatar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <!--Name-->
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/nameInput"
+        android:layout_marginTop="@dimen/_50mdp"
+        android:hint="@string/name"
+        style="@style/CustomOotLineBox"
+        app:startIconDrawable="@drawable/ic_round_person_24"
+        android:layout_marginHorizontal="@dimen/_30font_mdp"
+        app:layout_constraintTop_toBottomOf="@id/userAvatarImg">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/nameEdt"
+            style="@style/TextViewLightStyle"
+            android:textSize="@dimen/_16font_mdp"
+
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+    <!--Email-->
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/emailInput"
+        android:layout_marginTop="@dimen/_20mdp"
+        android:hint="@string/email"
+        style="@style/CustomOotLineBox"
+        app:startIconDrawable="@drawable/ic_round_email_24"
+        android:layout_marginHorizontal="@dimen/_30font_mdp"
+        app:layout_constraintTop_toBottomOf="@id/nameInput"
+     >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/nemailEdt"
+            style="@style/TextViewLightStyle"
+            android:textSize="@dimen/_16font_mdp"
+
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+    <!--Pass-->
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/passInput"
+        android:layout_marginTop="@dimen/_20mdp"
+        android:hint="@string/password"
+        style="@style/CustomOotLineBox"
+        app:startIconDrawable="@drawable/ic_round_lock_24"
+        app:passwordToggleEnabled="true"
+        android:layout_marginHorizontal="@dimen/_30font_mdp"
+        app:layout_constraintTop_toBottomOf="@id/emailInput"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/passEdt"
+            style="@style/TextViewLightStyle"
+            android:textSize="@dimen/_16font_mdp"
+
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+    <!--submitBtn-->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/submitBtn"
+        android:layout_width="0dp"
+        app:layout_constraintTop_toBottomOf="@id/passInput"
+        app:layout_constraintStart_toStartOf="@id/passInput"
+        app:layout_constraintEnd_toEndOf="@id/passInput"
+        android:layout_marginTop="@dimen/_40mdp"
+        android:fontFamily="sans-serif-condensed-light"
+        android:textSize="@dimen/_18font_mdp"
+        android:textStyle="bold"
+        app:cornerRadius="3dp"
+        android:text="@string/submit"
+        android:textColor="@color/gunmetal"
+        android:backgroundTint="@color/crayola"
+        android:layout_height="@dimen/_50mdp"/>
+    <!--ProgressBar-->
+    <ProgressBar
+        android:id="@+id/submitLoading"
+        android:layout_width="@dimen/_20mdp"
+        android:layout_height="@dimen/_20mdp"
+        app:layout_constraintTop_toTopOf="@id/submitBtn"
+        app:layout_constraintStart_toStartOf="@id/submitBtn"
+        app:layout_constraintEnd_toEndOf="@id/submitBtn"
+        app:layout_constraintBottom_toBottomOf="@id/submitBtn"
+        android:visibility="gone"
+
+        />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
