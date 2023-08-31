@@ -34,3 +34,6 @@ TopMovies is a sample Android project using The [movies api](https://moviesapi.i
 - LiveData - Observable data holder that notify views when underlying data changes
 - Data Binding - Declarative way to bind data to UI layout.
 - Navigation component - Fragment routing handler. (Upcoming)
+
+## Sample Video
+<img src="https://s6.uupload.ir/files/ezgif.com-optimize_0u36.gif" />
