@@ -8,7 +8,7 @@ TopMovies is a sample Android project using The [movies api](https://moviesapi.i
     <img src="https://s6.uupload.ir/files/screenshot_20230829-202703_top_movie_yz35.png"  width="160" />
     <img src="https://s6.uupload.ir/files/screenshot_20230829-202718_top_movie_ruu7.png" width="160" />
     <img src="https://s6.uupload.ir/files/screenshot_20230829-202721_top_movie_jem7.png"  width="160"  />
-    <img src="https://biaupload.com/do.php?imgf=org-ff3ce7ed870c1.png"  width="180" />
+   <img src="https://i.ibb.co/MkTCBX5/Screenshot-20230829-202851-Top-Movie.png"  width="160">
     
 </div>
 
@@ -35,5 +35,3 @@ TopMovies is a sample Android project using The [movies api](https://moviesapi.i
 - Data Binding - Declarative way to bind data to UI layout.
 - Navigation component - Fragment routing handler. (Upcoming)
 
-## Sample Video
-<img src="https://s6.uupload.ir/files/ezgif.com-optimize_0u36.gif" />
