@@ -73,6 +73,7 @@ class GenresAdapter @Inject constructor() : RecyclerView.Adapter<GenresAdapter.V
         onItemClickListener = listener
     }
 
+
     private val differCallback = object : DiffUtil.ItemCallback<ResponseGenresListItem>() {
         override fun areItemsTheSame(
             oldItem: ResponseGenresListItem,
