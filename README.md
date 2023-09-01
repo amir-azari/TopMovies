@@ -5,7 +5,7 @@ TopMovies is a sample Android project using The [movies api](https://moviesapi.i
 
 <div align="center">
     <img src="https://s6.uupload.ir/files/screenshot_20230829-202659_top_movie_3bz.png"  width="160"  />
-    <img src="https://s6.uupload.ir/files/screenshot_20230829-202703_top_movie_yz35.png"  width="160" />
+    <img src="https://i.ibb.co/NWMR436/Screenshot-20230829-202703-Top-Movie.png" width="160">
     <img src="https://s6.uupload.ir/files/screenshot_20230829-202718_top_movie_ruu7.png" width="160" />
     <img src="https://s6.uupload.ir/files/screenshot_20230829-202721_top_movie_jem7.png"  width="160"  />
    <img src="https://i.ibb.co/MkTCBX5/Screenshot-20230829-202851-Top-Movie.png"  width="160">
